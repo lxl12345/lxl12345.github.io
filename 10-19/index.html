@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<title></title>
+		<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+		<style>
+			#text {
+				width: 300px;
+				height: 230px;
+				resize: none;
+			}
+		</style>
+		<script type="text/javascript">
+			$(function() {
+				$('#text').blur(function() {
+					var val = $("#text").val().length;
+					if(val > 60) {
+						$("#btn").attr("disabled", "disabled");
+						alert("提交失败，您输入的文字太长")
+					} else {
+						alert("提交成功")
+					}
+				})
+			})
+		</script>
+	</head>
+
+	<body>
+		<textarea name="" id="text" rows="" cols=""></textarea>
+		<br>
+		<input type="submit" id="btn" name="" value="提交" />
+	</body>
+
+</html>
