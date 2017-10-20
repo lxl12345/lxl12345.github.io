@@ -1,0 +1,620 @@
+/* css reset*/
+
+@charset "utf-8";
+html {
+	color: #000;
+	background: #FFF;
+	font-family: Microsoft YaHei, sans-serif, Arial, '宋体';
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td,
+strong {
+	padding: 0;
+	margin: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+fieldset,
+img {
+	border: 0;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+var,
+em,
+i {
+	font-style: normal;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var,
+optgroup {
+	font-style: inherit;
+	font-weight: inherit;
+}
+
+del,
+ins {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+caption,
+th {
+	text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+q:before,
+q:after {
+	content: '';
+}
+
+abbr,
+acronym {
+	border: 0;
+	font-variant: normal;
+}
+
+sup {
+	vertical-align: baseline;
+}
+
+sub {
+	vertical-align: baseline;
+}
+
+legend {
+	color: #000;
+}
+
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+}
+
+input,
+button,
+textarea,
+select {
+	*font-size: 100%;
+}
+
+.clear {
+	clear: both;
+	height: 0px;
+	overflow: hidden;
+}
+
+.clearfix:after {
+	clear: both;
+	display: block;
+	content: "...";
+	visibility: hidden;
+	height: 0;
+	font-size: 0;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+	-webkit-appearance: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+a {
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	transition: all 0.2s linear 0s;
+}
+
+.wrap {
+	width: 100%;
+	height: 100%;
+}
+
+.top {
+	width: 100%;
+	height: 40px;
+	background-color: #000000;
+}
+
+.top_cont {
+	width: 1200px;
+	height: 39px;
+	margin: auto;
+}
+
+.top_ul {
+	width: 457px;
+	height: 39px;
+	float: left;
+}
+
+.top_cont a:hover {
+	color: #FF0000;
+}
+
+.top_ul li {
+	float: left;
+	font-size: 13px;
+	width: 105px;
+	height: 19px;
+	text-align: center;
+	border-right: 1px solid #FFFFFF;
+	margin-top: 10px;
+}
+
+.top_ul li:nth-child(2) {
+	width: 137px;
+}
+
+.top a {
+	color: #FFFFFF;
+}
+
+.top_title {
+	width: 90px;
+	height: 38px;
+	line-height: 38px;
+	position: relative;
+	cursor: pointer;
+	font-size: 14px;
+	text-align: center;
+	float: left;
+}
+
+.top_title ul {
+	width: 156px;
+	border: 1px solid rgb(211, 211, 211);
+	transition: all 2s;
+	position: absolute;
+	left: 0px;
+	top: 38px;
+	z-index: 9999;
+	padding: 8px 0px;
+	background: rgb(255, 255, 255);
+}
+
+.top_title ul img {
+	float: left;
+	margin-left: 10px;
+}
+
+.top_title2 {
+	width: 90px;
+	position: relative;
+	float: left;
+	height: 38px;
+	line-height: 38px;
+	cursor: pointer;
+	font-size: 14px;
+	text-align: center;
+	/*  z-index: 9999;*/
+}
+
+.top_title2 ul {
+	width: 251px;
+	border: 1px solid rgb(211, 211, 211);
+	position: absolute;
+	left: 0px;
+	top: 38px;
+	z-index: 9999;
+	padding: 8px 0px;
+	display: none;
+	background: rgb(255, 255, 255);
+}
+
+.top_title2 ul img {
+	float: left;
+}
+
+.top_right {
+	width: 168px;
+	height: 19px;
+	float: right;
+}
+
+.top_right li {
+	width: 50px;
+	text-align: center;
+	border-right: 1px solid #FFFFFF;
+	float: left;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.top_right li:nth-child(3) {
+	width: 66px;
+	border-right: none;
+}
+
+.logo_box {
+	width: 1200px;
+	height: 38px;
+	padding-top: 30px;
+	margin: 0px auto;
+}
+
+.logo {
+	width: 189px;
+	height: 38px;
+	float: left;
+}
+
+.logo_text {
+	width: 787px;
+	height: 36px;
+	float: right;
+}
+
+.inp {
+	width: 637px;
+	height: 34px;
+	border: 1px solid rgb(210, 210, 210);
+	outline: 0px;
+	font-size: 12px;
+	padding: 0px 10px;
+	float: right;
+	line-height: 34px;
+	margin-right: -1px;
+	float: left;
+	margin-left: 68px;
+	position: relative;
+}
+
+.inp::-webkit-input-placeholder {
+	color: #a9a9a9;
+}
+
+.lu {
+	width: 277px;
+	height: 18px;
+	margin-top: 10px;
+	position: absolute;
+	left: 71%;
+}
+
+.lu li {
+	float: left;
+	width: 54px;
+	height: 18px;
+	font-size: 12px;
+	text-align: center;
+	background-color: #eeeeee;
+	margin-right: 10px;
+}
+
+.inp2 {
+	width: 61px;
+	height: 34px;
+	background-color: #000000;
+	background-image: url(../img/shousuo.jpg);
+	background-repeat: no-repeat;
+	background-position: 15px 5px;
+	float: left;
+	border: none;
+	outline: none;
+}
+
+.nav {
+	width: 1200px;
+	margin: 0px auto;
+	height: 56px;
+	position: relative;
+}
+
+.ad {
+	position: absolute;
+	bottom: 8px;
+	left: 0px;
+	width: 200px;
+	height: 48px;
+	overflow: hidden;
+}
+
+.nav_box {
+	width: 1000px;
+	height: 56px;
+	margin: 0px auto;
+	padding-left: 200px;
+}
+
+.nav_box ul li {
+	float: left;
+	padding-right: 54px;
+	line-height: 56px;
+	position: relative;
+	font-size: 17px;
+}
+
+.nav_box ul li:nth-child(9) {
+	padding-right: 20px;
+}
+
+.nav_box ul li span.nav_usepng {
+	margin-left: -5px;
+}
+
+.nav_new {
+	width: 32px;
+	background-position: -275px -198px;
+}
+
+.nav_usepng {
+	display: inline-block;
+	background-image: url(http://m1.lefile.cn/shoppc/c/css/icons/icons_sprit.png);
+	background-repeat: no-repeat;
+}
+
+.n.av_hot,
+.nav_new,
+.nav_win {
+	top: 9px;
+	height: 21px;
+	position: absolute;
+}
+
+.nav_box ul li span.nav_usepng {
+	margin-left: -5px;
+}
+
+.nav_hot {
+	width: 32px;
+	background-position: -268px -3px;
+}
+
+.nav_usepng {
+	display: inline-block;
+	background-image: url(http://m1.lefile.cn/shoppc/c/css/icons/icons_sprit.png);
+	background-repeat: no-repeat;
+}
+
+.nav_hot,
+.nav_new,
+.nav_win {
+	top: 9px;
+	height: 21px;
+	position: absolute;
+}
+
+#top_cart_count {
+	font-size: 11px;
+	position: absolute;
+	display: inline-block;
+	background-color: red;
+	width: 19px;
+	height: 19px;
+	position: absolute;
+	line-height: 18px;
+	padding-left: 2px;
+	top: 5px;
+	border-radius: 50%;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.center {
+	width: 1200px;
+	margin: auto;
+	position: relative;
+}
+
+.center_left {
+	width: 190px;
+	float: left;
+	border: 1px solid #e6e6e6;
+}
+
+.center_left li {
+	width: 170px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 22px;
+}
+.ul{
+	width: 190px;
+}
+.list_cont {
+	width: 934px;
+	height: 343px;
+	background: #f7f7f7;
+	position: absolute;
+	left: 190px;
+	top: -1px;
+	padding: 0 22px 20px 52px;
+	display: none;
+	z-index: 333;
+}
+
+#wul {
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.list_cont,
+.list_nm_exp {
+	border-right: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.list_cont,
+.list_nav {
+	border-top: 1px solid #e6e6e6;
+}
+
+.list_lt {
+	width: 630px;
+	float: left;
+	margin-top: 20px;
+	color: #000000;
+}
+
+
+/*.list_lta {
+    margin-top: 15px;
+}*/
+
+.list_lta ul {
+	margin-left: 55px;
+	border-bottom: 1px solid #e5e5e5;
+	width: 575px;
+	padding-bottom: 5px;
+	padding-top: 2px;
+}
+
+.list_lta ul li {
+	font-size: 12px;
+	float: left;
+	width: 128px;
+	line-height: 20px;
+	height: 20px;
+	zoom: 1;
+	border-left: 1px solid #e5e5e5;
+}
+
+.list_nav li {
+	list-style: none;
+	z-index: 111;
+}
+
+.list_rt img {
+	margin-top: 10px;
+	margin-left: 40px;
+}
+
+#box {
+	width: 770px;
+	height: 365px;
+	overflow: hidden;
+	position: relative;
+	float: left;
+}
+
+#list {
+	width: 4620px;
+	font-size: 0;
+	float: left;
+}
+
+#list img {
+	width: 770px;
+	height: 365px;
+}
+
+.btn {
+	width: 30px;
+	height: 50px;
+	background-color: #999;
+	opacity: 0.5;
+	position: absolute;
+	font-size: 35px;
+}
+
+.btn:nth-of-type(1) {
+	left: 0;
+	top: 50%;
+	margin-top: -25px;
+}
+
+.btn:nth-of-type(2) {
+	right: 0;
+	top: 50%;
+	margin-top: -25px;
+}
+
+.dote {
+	width: 100px;
+	height: 10px;
+	position: absolute;
+	left: 50%;
+	margin-left: -40px;
+	top: 260px;
+	font-size: 0;
+}
+
+.dote li {
+	font-size: 10px;
+	display: inline-block;
+	text-align: center;
+	line-height: 15px;
+	width: 15px;
+	height: 15px;
+	background-color: #000;
+	color: white;
+	margin-left: 5px;
+	border-radius: 50%;
+}
+
+.dote li.on {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+.center_rigth{
+	width: 220px;
+	height: 345px;
+	float: left;
+}
